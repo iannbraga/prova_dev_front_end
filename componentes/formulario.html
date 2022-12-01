@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1 id="titulo">Eita</h1>
+    
+
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <!-- Nome -->
+            <label for="nome">Nome:<input id="nome" type="text" placeholder="Meu nome é..."></label>
+            <!-- Email -->
+            <label>Email:<input id="email" type="email" placeholder=""></label>
+
+            <!-- Select -->
+            
+            <select name="paises">
+                <option value="Brasil">Brasil</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <!-- Sexo -->
+            <label>Sexo</label>
+            <label><input type="radio" id="masculino" name="sexo" value="masculino">Feminino</label>
+            <label><input type="radio" id="feminino" name="sexo" value="feminino">Masculino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Segunda legenda</legend>  
+            <!-- Checkbox -->
+            <label>Conhecimentos</label>
+            <label><input type="checkbox" id="java" name="linguagem1" value="Java">Java</label>
+            <label><input type="checkbox" id="java" name="linguagem2" value="Python">Python</label>
+            <label><input type="checkbox" id="java" name="linguagem3" value="JS">JS</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Outra legenda</legend>
+            <!-- Message -->
+            <label for="messae">Sugestão:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <button type="submit" value="Submit">Cadastrar</button>
+    </form>
+
+    
+    <!-- JAVASCRIPT -->
+    
+    <!-- 
+        Pesquisar sobre: DOM (Document Object Model), descobrir como enviar um arquivo do tipo .DOC ou .PDF para o back-end por meio do JS
+     -->
+    
+    <script>
+        var titulo = document.querySelector("h1");
+        titulo.textContent = ("Agora vai");
+        titulo.textContent = "";
+
+    </script>
+
+</body>
+
+</html>
