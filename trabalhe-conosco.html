@@ -26,7 +26,7 @@
         <nav class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 align-items-center">
 
             <a href="/">
-                <img src="../img/LOGO.png" class="rounded-circle mx-auto d-block" alt="..." width="64">
+                <img src="../img/LOGO.png" class="rounded-circle mx-auto d-block" alt="logo" width="64">
             </a>
 
             <a href="index.html" class="nav-link px-2 link-dark">Home</a>
@@ -53,40 +53,40 @@
         <!-- Fim -->
 
         <div class="container text-center" style="width: 80%;">
-            <form action="post">
+            <form method="post">
                 <div class="row justify-content-center g-3">
                     <!-- Primeiro nome -->
                     <div class="col-md-6">
                         <input class="form-control" type="text" name="primeiro-nome" id="primeiro-nome"
-                            placeholder="Primeiro nome">
+                            placeholder="Primeiro nome" required>
                     </div>
 
                     <!-- Segundo nome -->
                     <div class="col-md-6">
                         <input class="form-control" type="text" name="ultimo-nome" id="ultimo-nome"
-                            placeholder="Ultimo nome">
+                            placeholder="Ultimo nome" required>
                     </div>
 
                     <!-- Email -->
                     <div class="col-12">
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
                     </div>
 
                     <!-- DDD -->
                     <div class="col-4">
-                        <input class="form-control" type="tel" name="ddd" id="ddd" placeholder="DDD">
+                        <input class="form-control" type="tel" name="ddd" id="ddd" placeholder="DDD" required>
                     </div>
 
                     <!-- Número -->
                     <div class="col-8">
-                        <input class="form-control" type="tel" name="numero" id="numero" placeholder="Número">
+                        <input class="form-control" type="tel" name="numero" id="numero" placeholder="Número" required>
                     </div>
 
                     <!-- Vaga de interesse -->
                     <div class="col-12">
                         <label for="inputState" class="form-label">Área de interesse</label>
 
-                        <select id="inputState" class="form-select">
+                        <select id="inputState" class="form-select" required>
                             <option selected>Escolha uma opção</option>
                             <option value="Manicure">Manicure</option>
                             <option value="Pedicure">Pedicure</option>
@@ -109,7 +109,8 @@
 
                     <!-- Enviar -->
                     <div class="col-12">
-                        <button class="btn btn-secondary" type="submit">Submit form</button>
+                        <!-- <a href="" class="btn btn-secondary" type="submit">Enviar</a> -->
+                        <button class="btn btn-secondary" type="submit">Enviar</button>
                     </div>
 
                 </div>
