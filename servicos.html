@@ -16,17 +16,24 @@
     <!-- Icons Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
+<!-- 
+.color1 { #cca494 };
+.color2 { #fce4d4 };
+.color3 { #59382a };
+.color4 { #976f58 };
+.color5 { #d4b2a2 };
+ -->
 
-<body class="container">
+<body class="container" style="background-color: #fcece1;">
 
     <!-- Navbar -->
-    <header
+    <header id="header"
         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-around py-3 mb-4 border-bottom">
 
-        <nav class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 align-items-center">
+        <nav class="nav col-12 col-md-auto mb-2 justify-content-center align-items-center">
 
             <a href="/">
-                <img src="../img/LOGO.png" class="rounded-circle mx-auto d-block" alt="..." width="64">
+                <img src="img/LOGO.png" class="rounded-circle mx-auto d-block" alt="..." width="64">
             </a>
 
             <a href="index.html" class="nav-link px-2 link-dark">Home</a>
@@ -34,7 +41,6 @@
             <a href="gelareia-clientes.html" class="nav-link px-2 link-dark">Galeria de Clientes</a>
             <a href="servicos.html" class="nav-link px-2 link-secondary">Serviços</a>
             <a href="cursos.html" class="nav-link px-2 link-dark">Cursos</a>
-            <a href="parceiros.html" class="nav-link px-2 link-dark">Parceiros</a>
             <a href="trabalhe-conosco.html" class="nav-link px-2 link-dark">Trabalhe conosco</a>
         </nav>
     </header>
@@ -44,7 +50,7 @@
     <main>
 
         <!-- Mensagem inicial -->
-        <section class="py-5 text-center container">
+        <section class="py-3 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">Serviços</h1>
@@ -74,7 +80,7 @@
                         <small class="text-muted fw-light">/mo</small>
                     </h1>
                     <p>
-                        <a class="btn btn-secondary" href="https://wa.me/+5563981457369">Marcar um horário</a>
+                        <a class="btn" href="https://wa.me/+5563981457369" style="background-color: #f5e1d4;">Marcar um horário</a>
                     </p>
                 </div><!-- /.col-lg-4 -->
 
@@ -221,13 +227,7 @@
             </div>
         </div>
         <!-- Fim -->
-
-        <div id="btnUp" class="p-5 fixed-top text-end">
-            <a href="#" class="btn btn-floating rounded-circle">
-                <i class="bi bi-arrow-up"></i>
-            </a>
-        </div>
-
+        
     </main>
     <!-- Fim -->
 
